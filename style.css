@@ -1,132 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200&family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Oswald:wght@200;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-html{
-    background-color: #297045 ;
-}
+
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+     
 }
+
+.container{
+display: grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 0.8fr 1fr 0.8fr 0.5fr;
+grid-template-areas: 
+"nav nav nav nav nav "
+"header header header header header"
+"main main main photo photo"
+"content content . content2 content2"
+"footer footer footer footer footer";
+grid-gap: 10px;
+font-size: 20px;
+text-align: center;
+
+}
+
 nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 5px solid #ECBA82;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: #297045;
-}
-nav h1{
-    color:#fff;
-    font-family: 'Roboto Slab' sans-serif;
-    font-size: 30px;
-    
-    
+    background:#59A96A ;
+    grid-area: nav;
+    border-bottom: solid ;
     
 }
-nav .onglets{
-    margin-bottom: 8px;
-    margin-left: 20px;
-    
-}
-nav .onglets a{
+nav a{
     text-decoration: none;
-    color: #ECBA82;
-    margin-right: 8px;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 3px;
-    
-}
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(/Images/banniere\ mountain.jpg);
-    background-size: cover;
-    color:#fff;
-    padding: 40px;
-    border-bottom: solid 5px #ECBA82;
-    text-align: center;
-}
-header h1{
-    font-family: 'Roboto Slab' sans-serif;
-    font-size: 50px;
-    color: #000;
-    
-    
-}
-header button{
-    margin-top: 120px;
-}
-header h4{
     color: black;
-    margin-top: 20px;
+   padding: 2px 20px;
+   border-bottom: solid 2px;
 }
-@media screen and (min-width:690px) {
-    nav .onglets a{
-        margin-left: 10px;
-        font-size: 30px;
 
-    }
-    header{
-        padding: 40px;
-        
-    }
-    header h1{
-        font-size: 50px;
-    }
-    header h4{
-        font-size: 30px;
-    }
-    nav h1{
-        font-size: 40px;
-    }
-
+.header{
+    background:#9BDEAC ;
+    grid-area: header ;
+   
+}
+main{
+    background:#B4E7CE ;
+    grid-area: main;
+}
+.photo{
+    background: #B4E7CE;
+    grid-area: photo;
     
 }
-
-@media screen and (min-width: 1000px) {
-    nav .onglets a{
-        margin-left: 10px;
-        font-size: 30px;
-        
-    }
-    header{
-        padding: 100px;
-    }
-   header h1{
-       font-size: 60px;
-    }
-    header h4{
-        font-size: 40px;
-    }
-   nav h1{
-       font-size: 50px;
-   }
+#content{
+    background: #636940;
+    grid-area: content;
+}
+#content2{
+    background: #636940;
+    grid-area: content2;
+}
+footer{
+    background:#474A2C ;
+    grid-area: footer;
 }
 
-@media screen and (min-width: 1400px) {
-    nav .onglets a{
-        margin-left: 150px;
-        font-size: 30px;
-        
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.6fr 2fr 1fr 1fr 1fr 0.8fr;
+        grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "photo"
+        "content"
+        "content2"
+        "footer";
     }
-    header{
-        padding: 130px;
+    nav a{
+        display: grid;
     }
-   header h1{
-       font-size: 60px;
-    }
-    header h4{
-        font-size: 40px;
-    }
-   nav h1{
-       font-size: 50px;
-   }
 }
-
-
