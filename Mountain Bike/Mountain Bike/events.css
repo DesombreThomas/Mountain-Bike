@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200&family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Oswald:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+     
+}
+
+
+
+
+
+
+
+
+
+
+/*header + nav*/
+nav{
+    background:#59A96A ;
+    grid-area: nav;
+    text-align: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 2px 100px;
+    
+}
+
+.header{
+    text-align: center;
+    background:#9BDEAC ;
+    grid-area: header ;
+    height: 100%;
+    background: url(/Images/montagne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+
+    /**main et content*/
+}
+
+
+.container{   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+    "nav nav nav nav nav "
+    "header header header header header"
+    "event event event event event"
+    "inscription inscription lieu lieu lieu"
+    "footer footer footer footer footer";
+    grid-gap: 10px;
+    font-size: 20px;
+      
+    }
+
+
+#inscription{
+    grid-area: inscription;
+    text-align: center;
+    background: #9BDEAC;
+}
+
+
+
+
+.event{
+    text-align: center;
+    grid-area: event;
+    background: #59A96A;
+}
+
+
+
+.lieu{
+    text-align: center;
+    grid-area: lieu;
+    background: #B4E7CE;
+}
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    font-family: 'Roboto Slab', serif;
+    background:#474A2C ;
+    grid-area: footer;
+}
+footer h4{
+    text-align: center;
+    background: #B4E7CE;
+}
+
+footer ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+footer ul li img{
+    padding-right: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+@media only screen and (max-width:1310px){
+ 
+    nav a{
+        display: grid;
+        border-bottom: solid 2px black;
+    }
+}
+
+
+@media only screen and (max-width:880px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.6fr 2fr 0.8fr 0.8fr 0.8fr;
+        grid-template-areas:
+        "nav"
+        "header"
+        "event"
+        "inscription"
+        "lieu"
+        "footer";
+    }
+    nav a{
+        display: grid;
+         
+    }
+    footer ul li img{
+        width: 16px;
+        height: 16px;
+    }
+    footer ul li a{
+        font-size: 16px;
+        text-transform: none;
+    }
+
+}

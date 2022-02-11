@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200&family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Oswald:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+     
+}
+
+.container{   
+display: grid;
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.5fr;
+grid-template-areas: 
+"nav nav nav nav nav "
+"header header header header header"
+"main main main video video"
+"info info . content2 content2"
+"footer footer footer footer footer";
+grid-gap: 10px;
+font-size: 20px;
+
+
+}
+/*header + nav*/
+nav{
+    background:#59A96A ;
+    grid-area: nav;
+    text-align: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 2px 100px;
+    
+}
+
+.header{
+    text-align: center;
+    background:#9BDEAC ;
+    grid-area: header ;
+    height: 100%;
+    background: url(/Images/montagne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+
+    /**main et content*/
+}
+main{
+    text-align: center;
+    padding: 20px;
+    background:#B4E7CE ;
+    grid-area: main;
+    font-family: 'Roboto Slab', serif;
+    
+    
+
+}
+main h2 p{
+    padding-left: 50px;
+    
+}
+.video{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background: #B4E7CE;
+    grid-area: video;  
+}
+#info{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background: #636940;
+    grid-area: info;
+    padding-left: 5px;
+}
+
+#content2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    background: #636940;
+    grid-area: content2;
+}
+.loic-paul img{
+    border-radius: 100px;
+}
+.loic-paul ul li{
+    list-style-type: none;
+}
+
+/*footer*/
+
+footer{
+    font-family: 'Roboto Slab', serif;
+    background:#474A2C ;
+    grid-area: footer;
+}
+footer h4{
+    text-align: center;
+    background: #B4E7CE;
+}
+
+footer ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+footer ul li img{
+    padding-right: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+/*media queries*/
+
+@media only screen and (max-width:1310px){
+    .video video{
+        width: 300px;
+    }
+    nav a{
+        display: grid;
+        border-bottom: solid 2px black;
+    }
+}
+
+
+@media only screen and (max-width:770px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.6fr 2fr 1fr 1fr 1fr 0.8fr;
+        grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "video"
+        "info"
+        "content2"
+        "footer";
+    }
+    nav a{
+        display: grid;
+         
+    }
+    footer ul li img{
+        width: 16px;
+        height: 16px;
+    }
+    footer ul li a{
+        font-size: 16px;
+        text-transform: none;
+    }
+
+}
+
+
+textarea{
+    resize: none;
+}

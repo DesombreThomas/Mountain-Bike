@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css">
+    <title>Mountain Bike</title>
+</head>
+<body>
+    <div class="container">
+ <!--Nav bar-->
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="/events.html" target="_blank">Evènements</a>
+        <a href="#footer">Contact</a>
+    </nav>
+    
+<!--fin navbar-->
+    
+<!--Header-->
+    
+     <div class="header">
+        <h1>Mountain Bike</h1>
+                <h3>Association de VTT se situant dans les Alpes Maritimes </h3>
+    </div>
+
+<!--fin header-->
+
+
+    <div class="event">
+
+        <h2 id="next-event">Prochain évènement !</h2>
+        <img src="/Images/forum-des-assos.jpg" alt="forum">
+        <p>Venez nous rencontrez et échanger lors du prochain forum des association qui aura lieu le le samedi 15 septembre 2022 au gymnase des mûriers situé au 11 rue René Dunan 06150 Cannes.</p>
+
+    </div>
+
+
+    <form id="inscription" method="post" action="#">
+
+        <h3>Les préinscriptions c'est par ici !</h3>
+
+        <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" placeholder= "Nom" required>
+
+        <label for="prénom">Prénom</label>
+            <input type="text" name="prénom" id="prénom" placeholder= "Prénom"  required>
+
+        <label for="birth">Date de naissance</label>    
+            <input type="date" name="birth" id="birth" required>
+
+        <label for="mail">Mail</label>    
+            <input type="email" name="mail" id="mail" placeholder= "email@email.com"  required>
+
+        <label for="tel">Téléphone</label>
+            <input type="tel" name="tel" id="tel" placeholder= "0600000000"  required>
+
+        <label for="message">Message</label>    
+            <textarea name="message" id="message" cols="40" rows="10"></textarea>
+
+        <button class="send-button" id="submit" type="submit">Envoyer !</button>
+    </form>
+
+    <div class="lieu">
+        <h3>Nous situez !</h3>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.625345792136!2d6.9672121154944735!3d43.55185107912488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce825a29077a01%3A0x31e07efc100fa1bf!2s11%20Rue%20Ren%C3%A9%20Dunan%2C%2006150%20Cannes!5e0!3m2!1sfr!2sfr!4v1644416580039!5m2!1sfr!2sfr" width="520" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+
+
+
+
+    <footer id="footer">
+        <h4>Nous contacter</h4>
+          <ul>
+            <li>
+                <a href="mailto:mountainbike@example.com"><img src="/Images/email.png" alt="mail">mountainbike@example.com</a>
+            </li>
+            <li>
+                <a href="tel:+33401020304"><img src="/Images/telephone.png" alt="telephone">0401020304</a>
+            </li>
+              <li>
+                  <a href="https://www.facebook.com/" target="_blank"><img src="/Images/facebook.png" alt="facebook">Facebook</a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com/" target="_blank"><img src="/Images/youtube.png" alt="youtube">Youtube</a>
+              </li>
+
+          </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    </div>
+ 
+    
+</body>
+</html>
