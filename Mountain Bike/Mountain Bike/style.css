@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+    background: #dfdfe4;
      
 }
 
@@ -28,24 +29,31 @@ font-size: 20px;
 }
 /*header + nav*/
 nav{
-    background:#59A96A ;
     grid-area: nav;
     text-align: center;
+    background:  #344249;
+    margin-bottom: -10px;
     
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     padding: 2px 100px;
+    font-size: 1.5em;
     
+}
+
+nav a:hover{
+    background-color:#D9C5B2  ;
+    transition: 0.2s;
 }
 
 .header{
     text-align: center;
-    background:#9BDEAC ;
     grid-area: header ;
     height: 100%;
     background: url(/Images/montagne.jpg);
+    border-bottom: 5px solid #D9C5B2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,44 +62,73 @@ nav a{
 
     /**main et content*/
 }
+
+.header h1{
+    font-size: 4em;
+    color: #344249;
+    text-transform: uppercase;
+}
+.header h3{
+    font-size: 2.5em;
+    color: #462405;
+    text-transform: uppercase;
+}
+
 main{
     text-align: center;
     padding: 20px;
-    background:#B4E7CE ;
     grid-area: main;
     font-family: 'Roboto Slab', serif;
-    
-    
-
+}
+main p{
+    display: inline-block;
 }
 main h2 p{
-    padding-left: 50px;
-    
+    padding-left: 50px; 
+}
+h2{
+    box-shadow: 0px 10px 20px -10px #586F7C;
 }
 .video{
+    padding-right: 20px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    background: #B4E7CE;
     grid-area: video;  
 }
 #info{
+    display: inline-block;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    background: #636940;
     grid-area: info;
-    padding-left: 5px;
+    padding: 20px;
+    
+}
+
+#info p a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid #6b9dba;
+    
+}
+#info p a:hover{
+    background-color: #6b9dba;
+    transition: 0.3s;
 }
 
 #content2{
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    background: #636940;
     grid-area: content2;
 }
 .loic-paul img{
     border-radius: 100px;
 }
 .loic-paul ul li{
+    padding-right: 25px;
     list-style-type: none;
 }
 
@@ -99,12 +136,14 @@ main h2 p{
 
 footer{
     font-family: 'Roboto Slab', serif;
-    background:#474A2C ;
     grid-area: footer;
+    background: #D9C5B2;
 }
 footer h4{
     text-align: center;
-    background: #B4E7CE;
+    background: #D9C5B2;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 footer ul li{
