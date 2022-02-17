@@ -38,7 +38,7 @@ nav a:hover{
     text-align: center;
     grid-area: header ;
     height: 100%;
-    background: url(/Images/banniere\ test.jpg);
+    background: url(/Images/banniere.jpg);
     border-bottom: 5px solid #D9C5B2;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@ nav a:hover{
     background-attachment: fixed;
 }
 
- /**main et content*/
+
 .header h1{
     font-size: 4em;
     color: #1b1e1f;
@@ -57,7 +57,7 @@ nav a:hover{
     color: #d9c5b2;
     text-transform: uppercase;
 }
-
+ /**main et content*/
 
 .container{   
     display: grid;
@@ -82,6 +82,10 @@ nav a:hover{
         text-align: center;
     }
 
+    .event img{
+        border: 3px solid #586F7C;
+    }
+
     .event h2{
         box-shadow: 0px 10px 20px -10px #586F7C;
         font-size: 2.5em;
@@ -93,10 +97,16 @@ nav a:hover{
         text-align: center;
     }
 
+    .event span{
+        text-transform: uppercase;
+        border-bottom: solid 2px #586F7C;
+    }
+
 /*formulaire*/
 
 
 #inscription{
+   
     grid-area: inscription;
     text-align: center;
     padding: 20px;
@@ -220,6 +230,7 @@ footer ul li{
     
 }
 footer ul li a{
+    
     text-decoration: none;
     color: whitesmoke;
     padding-bottom: 20px;
@@ -251,7 +262,7 @@ footer ul li img{
 @media only screen and (max-width:1100px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.6fr 2fr 1fr 1fr 0.8fr;
+        grid-template-rows: 0.4fr 0.6fr 1fr 2fr 1fr 0.8fr;
         grid-template-areas:
         "nav"
         "header"
@@ -265,7 +276,10 @@ footer ul li img{
          
     }
 
-    
+    #inscription{
+        border-top: solid 5px #586F7C;
+        border-bottom: solid 5px #586F7C;
+    }
 
     footer h4{
         font-size: 1em;
@@ -285,6 +299,8 @@ footer ul li img{
         text-transform: none;
     }
 }
+
+
 textarea{
     resize: none;
 }
