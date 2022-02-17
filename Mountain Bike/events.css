@@ -7,9 +7,15 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    background: lightgray
      
 }
+
+
+
+
+
+
+
 
 
 
@@ -47,116 +53,40 @@ nav a{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.8fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 0.8fr 0.5fr 1fr 0.5fr;
     grid-template-areas: 
     "nav nav nav nav nav "
     "header header header header header"
     "event event event event event"
-    "inscription inscription inscription inscription inscription"
-    "lieu lieu lieu lieu lieu"
+    "inscription inscription lieu lieu lieu"
     "footer footer footer footer footer";
     grid-gap: 10px;
     font-size: 20px;
-   
       
     }
-
-/*formulaire*/
 
 
 #inscription{
     grid-area: inscription;
-}
-
-section#inscription .container2{
-max-width: 1000px;
-margin: 0px auto;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-background-color: white;
-padding: 30px 10px;
-border-radius: 15px;
-box-sizing: border-box;
-box-shadow: 0px 10px 50px -10px red;
-}
-section#inscription .container2 .title{
     text-align: center;
-    color: black;
-    margin-top: 50px;
-}
-section#inscription .container2 .title h4{
-    font-size: 2em;
-    border-bottom: 5px solid red;
-}
-section#inscription .container2 form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 600px;   
-}
-section#inscription .container2 form input{
-    width: 48.5%;
-   
-}
-
-section#inscription .container2 textarea{
-    width: 100%;
-    height: 100px;
-    resize: none;
-    margin-bottom: 30px;
-}
-
-section#inscription .container2 form input,
-section#inscription .container2 textarea{
-    margin: 15px 0;
-    padding: 10px;
-    border: none;
-    box-sizing: border-box;
-    outline: none;
-    border-bottom: 2px solid green;
-    transition: 0.3s;
-
-}
-
-section#inscription .container2 form input:hover,
-section#inscription .container2 textarea:hover{
-    border-bottom: 2px solid red;
-
+    background: #9BDEAC;
 }
 
 
 
-section#inscription .container2 form button{
-    width: 190px;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
-    background-color: aqua;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    margin: 0 auto;
-}
-section#inscription .container2 form button:hover{
-    background-color: blue;
-    transition: 0.3s;
-}
 
 .event{
     text-align: center;
     grid-area: event;
-   
+    background: #59A96A;
 }
 
-/*carte*/
+
 
 .lieu{
     text-align: center;
     grid-area: lieu;
-    
+    background: #B4E7CE;
 }
 
 
@@ -168,11 +98,12 @@ section#inscription .container2 form button:hover{
 
 footer{
     font-family: 'Roboto Slab', serif;
+    background:#474A2C ;
     grid-area: footer;
 }
 footer h4{
     text-align: center;
-    background: 
+    background: #B4E7CE;
 }
 
 footer ul li{
@@ -205,7 +136,7 @@ footer ul li img{
 @media only screen and (max-width:880px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.6fr 2fr 1fr 1fr 0.8fr;
+        grid-template-rows: 0.4fr 0.6fr 2fr 0.8fr 0.8fr 0.8fr;
         grid-template-areas:
         "nav"
         "header"
